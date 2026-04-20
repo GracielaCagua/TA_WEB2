@@ -1,0 +1,173 @@
+<!--20 etiquetas html-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio de Ingenieria en Software">
+    
+    <title>Mi Sitio Web - Tarea HTML</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+<body>
+
+    <header>
+        <h1>Universidad Laica Eloy Alfaro de Manabí</h1>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/about">Acerca</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h1>Título Principal de la Página</h1>
+            <h2>Sección Importante</h2>
+            <h3>Subsección del Tema</h3>
+            <h4>Sub-subsección</h4>
+            <h5>Nivel cinco de encabezado</h5>
+            <h6>Nivel más bajo de encabezado</h6>
+        </section>
+
+        <hr>
+
+        <section>
+            <p>Este es el primer párrafo de mi página web.</p>
+            <p>
+                Este párrafo contiene <strong>texto en negrita</strong> y también texto en <em>cursiva</em>.
+            </p>
+            <p>Cada párrafo se muestra como un bloque separado.</p>
+            
+            <p>
+                El precio es: <span style="color: red; font-weight: bold;">$29.99</span> por mes.
+            </p>
+            <span class="resaltado">Texto importante</span>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Enlaces e Imágenes</h3>
+            <a href="https://www.google.com" target="_blank">Ir a Google</a> | 
+            <a href="#seccion1">Ver Sección 1</a> | 
+            <a href="mailto:info@ejemplo.com">Contáctanos</a>
+
+            <br><br>
+
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJR..." alt="Fotografía del campus" width="400" height="300">
+            
+            <img src="https://ejemplo.com/logo.png" 
+            alt="Logo de la empresa" 
+            class="logo-imagen">
+        </section>
+
+        <hr>
+
+        <div class="contenedor-principal">
+            <div class="cabecera">
+                <h2>Sección dentro de un DIV</h2>
+            </div>
+            <div class="contenido">
+                <p>Aquí va el contenido principal agrupado en bloques.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <section>
+            <h3>Listas</h3>
+            <p>Lista no ordenada (viñetas):</p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <p>Lista ordenada (numerada):</p>
+            <ol>
+                <li>Paso uno</li>
+                <li>Paso dos</li>
+                <li>Paso tres</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Tabla de Datos</h3>
+            <table border="1">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Edad</th>
+                    <th>Carrera</th>
+                </tr>
+                <tr>
+                    <td>Graciela Cagua</td>
+                    <td>20</td>
+                    <td>Ing. Software</td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section>
+            <h3>Formulario de Contacto</h3>
+            <form action="/procesar" method="post">
+                <label for="nombre">Nombre: </label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+                <br><br>
+                
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email">
+                <br><br>
+
+                <label for="pass">Contraseña:</label>
+                <input type="password" id="pass" name="pass" required>
+                <br><br>
+
+                <input type="checkbox" id="acepto" name="acepto">
+                <label for="acepto">Acepto los términos</label>
+                <br><br>
+
+                <label for="fecha_nac">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nac" name="fecha_nac">
+                <br><br>
+
+                <button type="submit">Enviar Formulario</button>
+                <button type="button" onclick="alert('Hola!')">Saludar</button>
+                <button type="reset">Limpiar campos</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/cursos">Cursos</a></li>
+                <li><a href="/proyectos">Proyectos</a></li>
+                <li><a href="/contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Universidad Ejemplo</p>
+        <p>Contacto: info@universidad.edu</p>
+    </footer>
+
+    <script>
+        function saludar() {
+            alert('¡Bienvenido a HTML!');
+        }
+    </script>
+    <script src="js/app.js" defer></script>
+
+</body>
+</html>
