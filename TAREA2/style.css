@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+}
+
+.perfil {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.perfil img {
+    width: 150px;      /* tamaño ancho */
+    height: 150px;     /* tamaño alto */
+    object-fit: cover; /* recorta sin deformar */
+    border-radius: 50%; /* forma circular */
+}
+
+.seccion {
+    margin-top: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+    background: #3498db;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+}
+
