@@ -1,0 +1,50 @@
+body { 
+  font-family: Arial, sans-serif; 
+  max-width: 500px; 
+  margin: 40px auto; 
+  padding: 0 20px; 
+}
+
+h1 { 
+  font-size: 20px; 
+}
+
+label { 
+  display: block; 
+  margin-top: 10px; 
+  font-size: 14px; 
+}
+
+input { 
+  width: 100%; 
+  padding: 8px; 
+  margin-top: 4px; 
+  box-sizing: border-box; 
+}
+
+button { 
+  margin-top: 14px; 
+  padding: 10px 20px; 
+  width: 100%; 
+  cursor: pointer; 
+  font-size: 15px; 
+}
+
+#resultado { 
+  margin-top: 20px; 
+}
+
+.fila { 
+  background: #f4f4f4; 
+  border-left: 4px solid #378ADD; 
+  padding: 10px 14px;
+  margin-bottom: 8px; 
+  border-radius: 6px; 
+  display: flex; 
+  justify-content: space-between; 
+}
+
+.fila span { 
+  font-weight: bold; 
+  font-size: 18px; 
+}

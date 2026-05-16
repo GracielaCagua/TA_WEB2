@@ -1,0 +1,39 @@
+/* Estilos para el texto principal y fondo de la página */
+body {
+    color: #00F; 
+    background-color: #CFC; 
+    font-family: Georgia, Cambria, serif; 
+    font-size: 16px;
+}
+
+/* Estilo para el título principal */
+h1 {
+    color: #F00; 
+    font-family: Verdana, Calibri, sans-serif; 
+    font-size: 32px;
+}
+
+/* Estilo para los subtítulos */
+h2 {
+    color: #A00; 
+    font-family: Verdana, Calibri, sans-serif; 
+    font-size: 24px;
+}
+
+/* Color verde oscuro para las etiquetas de los datos del libro */
+span {
+    color: #060;
+}
+
+/* Tamaño y negrita para "Internet" y "Web" */
+strong {
+    font-size: 20px;
+    font-weight: bold; /* Asegura el formato en negrita */
+}
+
+/* Fondo negro, texto blanco y cursiva para las siglas y nombres de tecnologías */
+em {
+    color: #FFF; 
+    background-color: #000;
+    font-style: italic; /* Asegura el formato en cursiva */
+}
