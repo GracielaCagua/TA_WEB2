@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 2 - Creación de Arreglos</title>
+</head>
+<body>
+    <h1>Métodos de Inicialización de Arreglos</h1>
+
+    <script type="text/javascript">
+        // --- PRIMERA FORMA ---
+        // Se crea el array vacío y se asigna posición por posición usando índices numéricos
+        var marcas_vehiculos = new Array();
+        marcas_vehiculos[0] = 'Mazda';
+        marcas_vehiculos[1] = 'Chevrolet';
+        marcas_vehiculos[2] = 'Toyota';
+
+        document.write("<h3>Primera Forma (Por posiciones):</h3>");
+        document.write("Vehículo en la posición 1: " + marcas_vehiculos[1] + "<br><br>");
+
+        // --- SEGUNDA FORMA ---
+        // Se definen todos los elementos directamente dentro de los argumentos del constructor
+        var productos_alimenticios = new Array('Pan', 'Agua', 'Lentejas');
+
+        document.write("<h3>Segunda Forma (Inicialización directa):</h3>");
+        document.write("Producto en la posición 0: " + productos_alimenticios[0] + "<br>");
+        
+        // Propiedad nativa .length para saber el tamaño del array
+        document.write("Cantidad total de alimentos en el array: " + productos_alimenticios.length + "<br>");
+    </script>
+</body>
+</html>

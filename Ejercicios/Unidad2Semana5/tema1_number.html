@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 1 - Objeto Number</title>
+</head>
+<body>
+    <h1>Límites Numéricos en JavaScript</h1>
+
+    <script type="text/javascript">
+        // Mostramos el valor máximo y mínimo soportado
+        alert("Propiedad MAX_VALUE: " + Number.MAX_VALUE);
+        alert("Propiedad MIN_VALUE: " + Number.MIN_VALUE);
+        
+        // Multiplicar el máximo por 2 supera el límite y produce Infinity
+        var sobrepaso = Number.MAX_VALUE * 2;
+        alert("Si superamos el MAX_VALUE obtenemos: " + sobrepaso);
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tema 4 - Matrices Multidimensionales</title>
+    <style>
+        table { border-collapse: collapse; font-family: sans-serif; margin-top: 20px; }
+        td { padding: 10px 15px; text-align: center; }
+        th { background-color: #34495e; color: white; padding: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Buscador - Matriz Multidimensional</h1>
+
+    <script type="text/javascript">
+        // Definimos la matriz bidimensional con las palabras más buscadas
+        var palabras_mas_buscadas = new Array();
+        palabras_mas_buscadas[0] = new Array('Computadoras', 'Celulares', 'Tablets');
+        palabras_mas_buscadas[1] = new Array('Programación', 'Diseño Web', 'Base de datos');
+        palabras_mas_buscadas[2] = new Array('Zapatos', 'Camisetas', 'Pantalones');
+
+        // Iniciamos la impresión de la estructura de la tabla en el documento
+        document.write("<table border='1'>");
+        document.write("<tr><th>Categoría</th><th>Subtipo 1</th><th>Subtipo 2</th><th>Subtipo 3</th></tr>");
+        
+        // Primer bucle: recorre las filas principales (las categorías)
+        for (var i = 0; i < palabras_mas_buscadas.length; i++) {
+            document.write("<tr>");
+            document.write("<td><b>Fila " + i + "</b></td>");
+            
+            // Segundo bucle (Anidado): recorre los elementos dentro de esa fila específica
+            for (var j = 0; j < palabras_mas_buscadas[i].length; j++) {
+                document.write("<td>" + palabras_mas_buscadas[i][j] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>
