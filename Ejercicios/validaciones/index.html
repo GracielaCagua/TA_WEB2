@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Práctica - Validaciones de Formulario</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="container">
+    <h2>Formulario de Registro Universatario</h2>
+    
+    <form id="formRegistro" action="procesar.php" method="post" onsubmit="return validarFormulario(event)">
+      
+      <label for="nombre">Nombre Completo (No vacío):</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+
+      <label for="telefono">Teléfono (Solo Números):</label>
+      <input type="text" id="telefono" name="telefono" placeholder="Ej. 0999999999">
+
+      <div class="fecha-grupo">
+        <label>Fecha de Nacimiento:</label>
+        <div class="inputs-fecha">
+          <input type="number" id="dia" placeholder="DD" min="1" max="31">
+          <input type="number" id="mes" placeholder="MM" min="1" max="12">
+          <input type="number" id="ano" placeholder="AAAA" min="1900" max="2026">
+        </div>
+      </div>
+
+      <label for="correo">Correo Electrónico:</label>
+      <input type="text" id="correo" name="correo" placeholder="usuario@correo.com">
+
+      <div class="checkbox-grupo">
+        <input type="checkbox" id="campoCondiciones">
+        <label for="campoCondiciones">Acepto los términos y condiciones académicos</label>
+      </div>
+
+      <button type="submit">Guardar Cambios</button>
+      <button type="reset" class="btn-reset">Borrar Datos</button>
+    </form>
+  </div>
+
+  <script src="validar.js"></script>
+</body>
+</html>
